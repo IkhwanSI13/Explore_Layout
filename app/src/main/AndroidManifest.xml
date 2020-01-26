@@ -9,10 +9,13 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".UI.RatingBarActivity"></activity>
-        <activity android:name=".UI.MaterialButtonActivity"></activity>
-        <activity android:name=".UI.ChipActivity"></activity>
-        <activity android:name=".UI.ButtomSheet.ButtomSheetActivity" />
+        <activity
+                android:name=".uI.recyclerView.multiSelect.RvMultiSelectActivity"
+                android:theme="@style/RvMultiSelectTheme" />
+        <activity android:name=".uI.RatingBarActivity" />
+        <activity android:name=".uI.MaterialButtonActivity" />
+        <activity android:name=".uI.ChipActivity" />
+        <activity android:name=".uI.buttomSheet.ButtomSheetActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,8 +23,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".UI.ButtomAppBarActivity" />
-        <activity android:name=".UI.TextInputActivity" />
+        <activity android:name=".uI.ButtomAppBarActivity" />
+        <activity android:name=".uI.TextInputActivity" />
     </application>
 
 </manifest>

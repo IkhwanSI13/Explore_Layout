@@ -1,4 +1,4 @@
-package com.ikhwankoto.layout.UI
+package com.ikhwankoto.layout.uI
 
 import android.os.Bundle
 import com.google.android.material.textfield.TextInputLayout

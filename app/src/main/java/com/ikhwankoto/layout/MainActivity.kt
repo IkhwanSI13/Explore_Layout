@@ -3,8 +3,9 @@ package com.ikhwankoto.layout
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.ikhwankoto.layout.UI.*
-import com.ikhwankoto.layout.UI.ButtomSheet.ButtomSheetActivity
+import com.ikhwankoto.layout.uI.*
+import com.ikhwankoto.layout.uI.buttomSheet.ButtomSheetActivity
+import com.ikhwankoto.layout.uI.recyclerView.multiSelect.RvMultiSelectActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -30,6 +31,9 @@ class MainActivity : AppCompatActivity() {
         }
         btn_ratingbar.setOnClickListener {
             startActivity(Intent(this, RatingBarActivity::class.java))
+        }
+        btn_rv_multiselect.setOnClickListener {
+            startActivity(Intent(this, RvMultiSelectActivity::class.java))
         }
     }
 }

@@ -1,4 +1,4 @@
-package com.ikhwankoto.layout.UI
+package com.ikhwankoto.layout.uI
 
 import android.os.Bundle
 import android.widget.Toast

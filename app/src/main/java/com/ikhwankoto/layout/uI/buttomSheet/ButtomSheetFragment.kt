@@ -1,4 +1,4 @@
-package com.ikhwankoto.layout.UI.ButtomSheet
+package com.ikhwankoto.layout.uI.buttomSheet
 
 import android.os.Bundle
 import android.view.LayoutInflater
