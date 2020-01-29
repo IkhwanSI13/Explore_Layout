@@ -9,6 +9,7 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".uI.TextViewActivity"></activity>
         <activity android:name=".uI.recyclerView.precomputedText.RvPrecomputedTextActivity" />
         <activity
                 android:name=".uI.recyclerView.multiSelect.RvMultiSelectActivity"

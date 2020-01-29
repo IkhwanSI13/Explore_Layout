@@ -49,7 +49,6 @@ class RvPrecomputedTextActivity : AppCompatActivity() {
         return data
     }
 
-
     var ALLOWED_CHARACTERS = "0123456789qwertyuiopasdfghjklzxcvbnm";
     private fun getRandomString(sizeOfRandomString: Int): String {
         val random = Random()

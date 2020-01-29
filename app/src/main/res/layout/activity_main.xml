@@ -58,6 +58,12 @@
                 android:layout_height="wrap_content"
                 android:text="Recycler View - Precomputed text" />
 
+        <Button
+                android:id="@+id/btn_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
     </LinearLayout>
 
 </androidx.core.widget.NestedScrollView>

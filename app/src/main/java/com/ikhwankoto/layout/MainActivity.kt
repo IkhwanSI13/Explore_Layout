@@ -39,5 +39,8 @@ class MainActivity : AppCompatActivity() {
         btn_rv_precomputed_text.setOnClickListener {
             startActivity(Intent(this, RvPrecomputedTextActivity::class.java))
         }
+        btn_tv.setOnClickListener {
+            startActivity(Intent(this, TextViewActivity::class.java))
+        }
     }
 }
