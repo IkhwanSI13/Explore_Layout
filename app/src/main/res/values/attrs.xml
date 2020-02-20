@@ -48,4 +48,9 @@
         <attr name="currency" format="string" />
     </declare-styleable>
 
+    <declare-styleable name="TextTextView">
+        <attr name="textTextViewText1Style" format="reference"/>
+        <attr name="textTextViewText2Style" format="reference"/>
+    </declare-styleable>
+
 </resources>

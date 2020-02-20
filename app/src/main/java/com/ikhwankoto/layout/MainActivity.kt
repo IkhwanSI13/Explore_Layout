@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.ikhwankoto.layout.uI.*
 import com.ikhwankoto.layout.uI.buttomSheet.ButtomSheetActivity
+import com.ikhwankoto.layout.uI.customView.CustomView1Activity
 import com.ikhwankoto.layout.uI.recyclerView.multiSelect.RvMultiSelectActivity
 import com.ikhwankoto.layout.uI.recyclerView.multiViewHolder.MultiVhActivity
 import com.ikhwankoto.layout.uI.recyclerView.precomputedText.RvPrecomputedTextActivity
@@ -45,6 +46,9 @@ class MainActivity : AppCompatActivity() {
         }
         btn_tv.setOnClickListener {
             startActivity(Intent(this, TextViewActivity::class.java))
+        }
+        btn_customview_style.setOnClickListener {
+            startActivity(Intent(this, CustomView1Activity::class.java))
         }
     }
 }
