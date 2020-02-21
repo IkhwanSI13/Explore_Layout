@@ -76,6 +76,12 @@
                 android:layout_height="wrap_content"
                 android:text="CustomView with style theme" />
 
+        <Button
+                android:id="@+id/btn_rv_visittable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recyclerview with Visitable pattern" />
+
     </LinearLayout>
 
 </androidx.core.widget.NestedScrollView>

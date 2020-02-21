@@ -9,6 +9,7 @@ import com.ikhwankoto.layout.uI.customView.CustomView1Activity
 import com.ikhwankoto.layout.uI.recyclerView.multiSelect.RvMultiSelectActivity
 import com.ikhwankoto.layout.uI.recyclerView.multiViewHolder.MultiVhActivity
 import com.ikhwankoto.layout.uI.recyclerView.precomputedText.RvPrecomputedTextActivity
+import com.ikhwankoto.layout.uI.recyclerView.visitablePattern.RvVisitableActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -49,6 +50,9 @@ class MainActivity : AppCompatActivity() {
         }
         btn_customview_style.setOnClickListener {
             startActivity(Intent(this, CustomView1Activity::class.java))
+        }
+        btn_rv_visittable.setOnClickListener {
+            startActivity(Intent(this, RvVisitableActivity::class.java))
         }
     }
 }
