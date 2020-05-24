@@ -1,4 +1,4 @@
-package com.ikhwankoto.layout.uI.buttomSheet
+package com.ikhwankoto.layout.uI.material.buttomSheet
 
 import android.os.Bundle
 import android.view.View
@@ -18,7 +18,8 @@ class ButtomSheetActivity : AppCompatActivity() {
 
         val sheetBehavior = BottomSheetBehavior.from(bottom_sheet)
         sheetBehavior.isHideable = false
-        sheetBehavior.setBottomSheetCallback(object : BottomSheetBehavior.BottomSheetCallback() {
+        //sheetBehavior.removeBottomSheetCallback
+        sheetBehavior.addBottomSheetCallback(object : BottomSheetBehavior.BottomSheetCallback() {
             override fun onSlide(p0: View, p1: Float) {
 
             }
@@ -28,26 +29,26 @@ class ButtomSheetActivity : AppCompatActivity() {
                     BottomSheetBehavior.STATE_HIDDEN -> {
                     }
                     BottomSheetBehavior.STATE_EXPANDED -> {
-                        btn_bottom_sheet.setText("Close Sheet")
+                        btn_bottom_sheet.text = "Close Sheet"
                     }
                     BottomSheetBehavior.STATE_COLLAPSED -> {
-                        btn_bottom_sheet.setText("Expand Sheet")
+                        btn_bottom_sheet.text = "Expand Sheet"
                     }
                     BottomSheetBehavior.STATE_DRAGGING -> {
                     }
                     BottomSheetBehavior.STATE_SETTLING -> {
+                    }
+                    BottomSheetBehavior.STATE_HALF_EXPANDED -> {
                     }
                 }
             }
         })
 
         btn_bottom_sheet.setOnClickListener {
-            if (sheetBehavior.state !== BottomSheetBehavior.STATE_EXPANDED) {
+            if (sheetBehavior.state != BottomSheetBehavior.STATE_EXPANDED) {
                 sheetBehavior.state = BottomSheetBehavior.STATE_EXPANDED
-                btn_bottom_sheet.setText("Close sheet")
             } else {
                 sheetBehavior.state = BottomSheetBehavior.STATE_COLLAPSED
-                btn_bottom_sheet.setText("Expand sheet")
             }
         }
 

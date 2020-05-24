@@ -3,9 +3,15 @@ package com.ikhwankoto.layout
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.ikhwankoto.layout.uI.*
-import com.ikhwankoto.layout.uI.buttomSheet.ButtomSheetActivity
+import com.ikhwankoto.layout.uI.RatingBarActivity
+import com.ikhwankoto.layout.uI.TextViewActivity
 import com.ikhwankoto.layout.uI.customView.CustomView1Activity
+import com.ikhwankoto.layout.uI.material.ButtomAppBarActivity
+import com.ikhwankoto.layout.uI.material.ChipActivity
+import com.ikhwankoto.layout.uI.material.MaterialButtonActivity
+import com.ikhwankoto.layout.uI.material.TextInputActivity
+import com.ikhwankoto.layout.uI.material.bottomNavigation.BottomNavigationActivity
+import com.ikhwankoto.layout.uI.material.buttomSheet.ButtomSheetActivity
 import com.ikhwankoto.layout.uI.recyclerView.multiSelect.RvMultiSelectActivity
 import com.ikhwankoto.layout.uI.recyclerView.multiViewHolder.MultiVhActivity
 import com.ikhwankoto.layout.uI.recyclerView.precomputedText.RvPrecomputedTextActivity
@@ -14,10 +20,15 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
+    //https://github.com/material-components/material-components-android/tree/master/docs/components
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        btn_bottomNavigation.setOnClickListener {
+            startActivity(Intent(this, BottomNavigationActivity::class.java))
+        }
         btn_textinput.setOnClickListener {
             startActivity(Intent(this, TextInputActivity::class.java))
         }
