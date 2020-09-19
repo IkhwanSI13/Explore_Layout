@@ -9,6 +9,11 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".uI.material.FabActivity"></activity>
+        <activity android:name=".uI.material.DialogActivity" />
+        <activity android:name=".uI.material.CollapsingToolbarActivity" />
+        <activity android:name=".uI.material.CheckboxActivity" />
+        <activity android:name=".uI.material.CardActivity" />
         <activity android:name=".uI.material.bottomNavigation.BottomNavigationActivity" />
         <activity android:name=".uI.recyclerView.visitablePattern.RvVisitableActivity" />
         <activity android:name=".uI.customView.CustomView1Activity" />

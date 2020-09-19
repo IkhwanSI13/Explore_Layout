@@ -17,12 +17,6 @@
                 android:textStyle="bold" />
 
         <Button
-                android:id="@+id/btn_textinput"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Text Input Layout" />
-
-        <Button
                 android:id="@+id/btn_buttomappbar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -41,10 +35,46 @@
                 android:text="Button" />
 
         <Button
+                android:id="@+id/btn_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Card" />
+
+        <Button
                 android:id="@+id/btn_chip"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Chip" />
+
+        <Button
+                android:id="@+id/btn_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Checkbox" />
+
+        <Button
+                android:id="@+id/btn_collapsingToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Collapsing Toolbar" />
+
+        <Button
+                android:id="@+id/btn_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dialog" />
+
+        <Button
+                android:id="@+id/btn_fab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FAB" />
+
+        <Button
+                android:id="@+id/btn_textinput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Text Input Layout" />
 
         <Button
                 android:id="@+id/btn_bottomNavigation"
@@ -73,7 +103,6 @@
                 android:text="Recycler View - Precomputed text" />
 
         <Button
-
                 android:id="@+id/btn_rv_visittable"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
